@@ -1,0 +1,66 @@
+
+# Django Project Setup
+
+This guide will help you set up, migrate, and run your Django project.
+
+## Prerequisites
+
+Ensure you have the following installed:
+
+- Python 3.10+
+- Pip (Python package installer)
+- Virtualenv (optional but recommended)
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/OrgZeroSet/supreme-doodle.git
+cd supreme-doodle
+```
+
+### 2. Create and activate a virtual environment (optional)
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Apply database migrations
+
+```bash
+python manage.py migrate
+```
+
+### 5. Run the server
+
+```bash
+python manage.py runserver
+```
+
+Visit `http://127.0.0.1:8000` in your browser to see the application running.
+
+## Stopping the Server
+
+To stop the server, press `CTRL+C` in your terminal.
+
+## Additional Commands
+
+- **Check for new migrations:** `python manage.py makemigrations`
+- **Apply migrations:** `python manage.py migrate`
+- **Create a new superuser:** `python manage.py createsuperuser`
+
+## Accessing the Admin Panel
+
+You can log in to the Django admin panel at `http://127.0.0.1:8000/admin/` using the credentials provided above.
+
+- **Email:** admin@gmail.com
+- **Username:** admin
+- **Password:** password
